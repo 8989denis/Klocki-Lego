@@ -1,0 +1,209 @@
+:root {
+  --kolor: rgb(228, 228, 228);
+  --bg-kolor: rgb(51, 51, 51);
+}
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica,
+    Arial, sans-serif;
+    color: var(--kolor);
+    background-color: var(--bg-kolor);
+    text-align: center;
+}
+* {
+  margin: 0;
+}
+#app {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+}
+h2 {
+  width: 20%;
+  margin-left: auto;
+  margin-right: auto; 
+  max-height: 5%;
+}
+nav {
+  display: flex;
+  width: 30%;
+  max-height: 10%;
+  min-width: max-content;
+  margin-left: auto;
+  margin-right: auto; 
+  justify-content: space-evenly;
+  padding: .5%;
+}
+button {
+  width: 20%;
+  min-width: max-content;
+  height: 125%;
+  border-radius: 25%;
+  background-color: var(--bg-kolor);
+  color: var(--kolor);
+  transition: all 300ms;
+}
+button:hover {
+  opacity: .7;
+  background-color: var(--kolor);
+  color: var(--bg-kolor);
+}
+h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+  width: 100%;
+}
+table {
+  height: 85%;
+  margin: auto;
+}
+td {
+  width: 15%;
+  border: 2px solid rgb(110, 101, 101);
+  border-radius: 7%;
+}
+tr:hover {
+  opacity: .8;
+  background-color: rgb(77, 47, 47);
+  cursor: pointer;
+}
+#divdous {
+  display: flex;
+  width: 50%;
+  height: 10%;
+  margin: auto;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  justify-content: space-around;
+  align-items: center;
+}
+.dodus {
+  width: 20%;
+  min-width: max-content;
+  height: 70%;
+  margin-top: 0;
+}
+hr {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  max-height: 5%;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+::selection {
+  background-color: transparent;
+  color: red;
+}
+.zaznaczony , .lewy , .prawy, .reload{
+  background-color: rgb(77, 47, 47);
+}
+tr:first-child {
+  font-weight: bolder;
+}
+#reload {
+  height: 100vh;
+}
+img {
+  max-width: 150px;
+}
+.dodawanie {
+  display: block;
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
+#reload.dodawanie {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+input.dodawanie {
+  text-align: center;
+  width: 25vw;
+  height: 15vh;
+  color: var(--kolor);
+  background-color: rgb(54, 40, 40);
+  border-radius: 10%;
+  transition: all 400ms;
+}
+button.dodawanie {
+  width: 30vw;
+  height: 10vh;
+}
+input:hover {
+  border: 1.5px solid red;
+  background-color: rgba(rgba(63, 148, 6, 0.644), green, blue, alpha);
+}
+#alertDiv {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  top: 17%;
+  left: 25%;
+  width: 50vw;
+  height: 50vh;
+  text-align: center;
+  justify-content: space-around;
+  align-self: center;
+  z-index: 2;
+  background-color: var(--bg-kolor);
+  border: var(--kolor) solid 1.5px;
+  border-radius: 25%;
+}
+#alertH1 {
+  font-size: 3vw;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+  margin-left: auto;
+  margin-right: auto;
+  color: rgb(168, 0, 0);
+}
+#alertButton {
+  width: 20vw;
+  height: 20vh;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+}
+#glowny {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 100%;
+  height: 100%;
+  justify-content: space-around;
+}
+#lewy {
+  display: flex;
+  width: 33%;
+}
+#srodkowy {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  justify-content: space-around;
+  align-items: center;
+  height: 50%;
+}
+#prawy {
+  display: flex;
+  width: 33%;
+}
+#srodkowy > button {
+  width: 70%;
+  height: 10%;
+}
+#lewy > table {
+  width: 100%;
+  margin: 0;
+}
+#prawy > table {
+  width: 100%;
+  margin: 0;
+}
